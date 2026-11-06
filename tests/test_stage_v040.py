@@ -41,7 +41,7 @@ class StageV040Tests(unittest.TestCase):
             elif name == 'group':
                 s.field, s.draft, s.digits = 1, 0, 1
             with self.subTest(page=name):
-                expected = Image.open(ROOT/f'ui/preview-v2/screens/{name}.png').convert('1').tobytes()
+                expected = Image.open(ROOT/f'tests/fixtures/ui-v040/{name}.png').convert('1').tobytes()
                 self.assertEqual(self.frame(s)[24*25:], expected[24*25:])
 
     def test_home_gutters_and_label_to_value_spacing_are_clear(self):
