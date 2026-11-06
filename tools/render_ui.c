@@ -80,12 +80,13 @@ int main(void) {
     stage_core_touch(&manual, 40, 35);
     if (save("manual.pbm", &manual))
         return 1;
-    manual.manual.ch = 14;
+    manual.manual.ch = 11;
     manual.manual.id = 0;
-    manual.manual_status = 1;
+    if (!stage_manual_add(&manual))
+        return 1;
     if (save("manual-saved.pbm", &manual))
         return 1;
-    manual.manual_status = 2;
+    stage_manual_add(&manual);
     if (save("manual-duplicate.pbm", &manual))
         return 1;
     stage_core_touch(&targets, 165, 160);
