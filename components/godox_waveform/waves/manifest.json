@@ -1,0 +1,33 @@
+{
+  "sample_rate_hz": 40000000,
+  "wifi_channel": 3,
+  "lo_hz": 2422000000,
+  "baseband_offset_hz": 2500000,
+  "target_hz": 2424500000,
+  "id": 0,
+  "bitrate": 250000,
+  "samples": 16128,
+  "loop_us": 403.2,
+  "guard_samples": 320,
+  "format": "little-endian u32: I10[9:0], Q10[19:10]",
+  "waves": {
+    "prepare": {
+      "bytes_hex": "aa aa aa aa c3 68 c3 68 d5 11",
+      "last_bit": 1,
+      "bits": 81,
+      "sha256": "99632a2178e25107abb590c066936a748a6e65cd160e133665e7c2899de4a336"
+    },
+    "test": {
+      "bytes_hex": "aa aa aa aa c3 68 c3 68 d5 09",
+      "last_bit": 1,
+      "bits": 81,
+      "sha256": "88a4119d0e6e99b1a84c6cc5aa3f5ddda8718c48fdfcb52baac7f6fa5100ae90"
+    },
+    "unprepare": {
+      "bytes_hex": "aa aa aa aa c3 68 c3 68 d5 21",
+      "last_bit": 1,
+      "bits": 81,
+      "sha256": "62d351d6f9b2004bd0cc5e6923f3fa7c904cb5994a0ae4532a6c23b19468ee4f"
+    }
+  }
+}

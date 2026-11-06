@@ -1,0 +1,14 @@
+menu "Stage touch controller"
+config STAGE_UI_ENABLED
+    bool "Enable Waveshare touch e-paper UI"
+    default y
+config STAGE_TOUCH_SWAP_XY
+    bool "Swap FT6336 X/Y"
+    default n
+config STAGE_TOUCH_MIRROR_X
+    bool "Mirror touch X"
+    default n
+config STAGE_TOUCH_MIRROR_Y
+    bool "Mirror touch Y"
+    default n
+endmenu

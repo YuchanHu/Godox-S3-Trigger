@@ -1,0 +1,99 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Directory metadata
+.directory
+
+# Temporary files
+*~
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Log files
+*.log
+
+# Build artifacts and directories
+/artifacts/
+/.vscode/
+/ui/
+/promotion/
+.env
+.env.*
+*.pem
+*.key
+# Publish current, reviewed documentation only. Historical logs remain local.
+/docs/*
+!/docs/README.md
+!/docs/user-guide.md
+!/docs/development.md
+!/docs/capture_rx_log.md
+!/docs/validation-current.json
+!/docs/images/
+**/build/
+build/
+*.o
+*.a
+*.out
+*.exe
+
+# ESP-IDF specific build outputs
+*.bin
+!components/godox_waveform/waves/*.bin
+!tests/fixtures/*.bin
+/third_party/godox-flash-radio/
+/third_party/esp32-iq-tx/
+/third_party/iq-reference/
+*.elf
+*.map
+flasher_args.json
+sdkconfig.old
+sdkconfig
+
+# ESP-IDF dependencies
+# For older versions or manual component management
+/components/.idf/
+**/components/.idf/
+# For modern ESP-IDF component manager
+managed_components/
+# If ESP-IDF tools are installed/referenced locally to the project
+.espressif/
+
+# CMake generated files
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+install_manifest.txt
+CTestTestfile.cmake
+
+# Python environment files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.egg-info/
+dist/
+
+# Virtual environment folders
+venv/
+.venv/
+env/
+
+# Language Servers
+.clangd/
+.ccls-cache/
+compile_commands.json
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# User-specific configuration files
+*.user
+*.workspace
+*.suo       # Visual Studio Solution User Options
+*.sln.docstates

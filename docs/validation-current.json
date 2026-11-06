@@ -1,0 +1,22 @@
+{
+  "version": "0.6.5",
+  "idf": "5.5.5",
+  "host_tests": 116,
+  "last_full_suite_passed": 116,
+  "optional_reference_tests": 3,
+  "build": "PASS",
+  "rf_sram_check": "PASS",
+  "air_test": {
+    "version": "0.6.3",
+    "channel": 14,
+    "id": "OFF",
+    "first_confirmation_seconds": 10.593,
+    "captures": 6595,
+    "capture_errors": 0
+  },
+  "pending_hardware_tests": [
+    "manual CH/ID persistence and triggering",
+    "PWR return-menu and sleep navigation"
+  ],
+  "note": "Learning and protocol research only. Follow applicable radio regulations."
+}
